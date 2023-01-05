@@ -119,7 +119,6 @@ const thirdQuestion = (): Promise<void> => {
 
 let chosenAmount: number = null;
 let rateType: string = null;
-
 const fourthQuestion = (): Promise<void> => {
     if (chosenPricingMethod === DAILY) {
         rateType = "days";
@@ -152,8 +151,7 @@ const main = async () => {
 
     rl.close();
 
-    const vehicleTypePricing = vehicleTypePricingMap.get(chosenVehicleType);
-    const vehicleRate = vehicleTypePricing!.get(chosenPricingMethod);
+    const vehicleRate = vehicleTypePricingMap.get(chosenVehicleType).get(chosenPricingMethod);
     const totalPrice = (chosenVehicleAmount * vehicleRate * chosenAmount);
     console.log("In order to rent " + chosenVehicleAmount + " " + chosenVehicleType + " vehicle(s) at a "
         + chosenPricingMethod + " rate for " + chosenAmount + " " + rateType + ", it would cost: $" + totalPrice.toFixed(2));

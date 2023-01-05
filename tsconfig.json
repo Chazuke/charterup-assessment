@@ -9,6 +9,7 @@
   ],
   "include": ["**/*.ts"],
   "files": [
-    "charterup-pricing-engine.ts"
+    "charter-up/*",
+    "home-depot/*",
   ]
 }

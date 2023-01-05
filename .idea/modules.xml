@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/charterup-pricing-engine.iml" filepath="$PROJECT_DIR$/.idea/charterup-pricing-engine.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/technical-assessments.iml" filepath="$PROJECT_DIR$/.idea/technical-assessments.iml" />
     </modules>
   </component>
 </project>
